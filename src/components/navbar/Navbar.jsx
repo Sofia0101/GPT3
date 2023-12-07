@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from "../../assets/assets/logo.svg";
+import logo from "../../assets/logo.svg";
 
 const Menu= () => (
   <>
@@ -40,13 +40,7 @@ const Navbar = () => {
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
           {toggleMenu && (
         <div className="gpt3__navbar-menu_container scale-up-center">
-          <div className="gpt3__navbar-menu_container-links">
-            <p><a href="#home">Home</a></p>
-            <p><a href="#wgpt3">What is GPT3?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
-          </div>
+          <Menu />
           <div className="gpt3__navbar-menu_container-links-sign">
             <p>Sign in</p>
             <button type="button">Sign up</button>
@@ -59,3 +53,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
