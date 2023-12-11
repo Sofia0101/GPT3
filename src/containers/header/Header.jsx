@@ -2,6 +2,8 @@ import React from "react";
 import "./header.css";
 import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
+
+
 const Header = () => {
   return (
     <div className="gpt3__header section__padding" id="home">
@@ -15,7 +17,7 @@ const Header = () => {
           alteration boisterous the attachment. Party we years to order allow
           asked of.
         </p>
-        
+
         <div className="gpt3__header-content__input">
           <input type="email" placeholder="Your Email Adress" />
           <button type="button">Get Started</button>
